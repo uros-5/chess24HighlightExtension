@@ -1,0 +1,20 @@
+{
+
+    "manifest_version": 2,
+    "name": "Chess24HighlightsExtension",
+    "version": "1.0",
+  
+    "description": "Highlighting board for better plan in live chess game",
+  
+    "icons": {
+      "48": "icons/highlighterChessIcon.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["https://chess24.com/en/game/*"],
+        "js": ["extension.js"]
+      }
+    ]
+  
+  }
